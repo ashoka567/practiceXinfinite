@@ -1,0 +1,29 @@
+import sun.util.PreHashedMap;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Map;
+
+public class TestT
+
+{
+
+    public static void main(String []args){
+
+        /*Map<Long, Date> map = new PreHashedMap<>();
+        Date d = new Date();
+        map.put(d.getTime(), d);
+
+        Date d1 = DateUtils.addDaysToCurrentDate(10);
+        map.put(d1.getTime(), d1);
+
+        Date d2 = DateUtils.addDaysToCurrentDate(10);
+        map.put(d2.getTime(), d2);
+
+
+        java.util.Collections.sort(new ArrayList<>(map.values()));
+
+        System.out.println(map.values());*/
+    }
+}

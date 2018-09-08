@@ -29,26 +29,28 @@ public class UniqueMorseRepresentations {
             m.put(d1[i], d[i]);
         }
         Set<String> count = new HashSet<>();
-        Set<String> count1 = new HashSet<>();
+        //Set<String> count1 = new HashSet<>();
         for(int k = 0 ; k <= words.length-1; k++){
             String s = words[k];
             String c = "";
-            StringBuilder result = new StringBuilder();
+            //StringBuilder result = new StringBuilder();
             for(int l = 0 ; l <= s.length()-1; l++){
-                c = c.concat(m.get(String.valueOf(s.charAt(l))));
-                result.append(d[s.charAt(l)-'a']);
+                c = c.concat(d[s.charAt(l)-'a']);
+               // result.append(d[s.charAt(l)-'a']);
             }
 
             System.out.println("1 -> " + c);
-            System.out.println("2 -> " + result);
+           // System.out.println("2 -> " + result);
             count.add(c);
-            count1.add(result.toString());
+           // count1.add(result.toString());
         }
          return count.size();
     }
 
     /**
      * [c-'a'] is used to now the index of the alphabet
+     *
+     * String builder is better than string for concatenation.
      *
      * @param words
      * @return int
