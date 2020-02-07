@@ -17,4 +17,10 @@ public class palindromicSubstrings {
         }
         return ans;
     }
+
+
+    public static void main(String[] args) {
+        palindromicSubstrings p = new palindromicSubstrings();
+        System.out.println(p.countSubstrings("ajhsdasasasdf'"));
+    }
 }
