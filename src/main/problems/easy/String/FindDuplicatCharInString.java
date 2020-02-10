@@ -28,6 +28,6 @@ public class FindDuplicatCharInString {
 
     public static void main(String[] args) {
         FindDuplicatCharInString d = new FindDuplicatCharInString();
-        d.hasDuplicate("aba");
+        d.hasDuplicate("abab");
     }
 }
