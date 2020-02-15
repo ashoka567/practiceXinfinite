@@ -11,4 +11,6 @@ public interface Astack<E> {
     public E pop();
 
     public E top();
+
+    public int size();
 }

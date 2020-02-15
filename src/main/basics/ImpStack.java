@@ -40,6 +40,11 @@ public  class  ImpStack implements Astack {
     }
 
     @Override
+    public int size() {
+        return 0;
+    }
+
+    @Override
     public Object pop() {
         return null;
     }

@@ -8,11 +8,12 @@ public class DefangingIPAddress {
         StringBuffer sb = null;
         if(address != null){
             sb = new StringBuffer(address);
-            for (int i = 0; i < sb.length(); i++) {
-                Character c = address.charAt(i);
-                if( Character.valueOf('.').equals(c) && i < address.length()-1){
+            for (int i = 0; i < sb.length()-1; i++) {
+                System.out.println(i+ " - "+sb.length());
+                Character c = sb.charAt(i);
+                if( Character.valueOf('.').equals(c)){ // Char value of string
                     sb = sb.replace(i, i+1, "[.]");
-                    i = i+2;
+                    ++i;
                 }
             }
         }
