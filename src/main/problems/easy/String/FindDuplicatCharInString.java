@@ -12,7 +12,7 @@ public class FindDuplicatCharInString {
             return false;
         }
 
-        boolean[] b = new boolean[128];
+        boolean[] b = new boolean[128];// having loop of booleans for ascii, so that if we have boolean true then return . codePointAt() will give the ascii code char.
 
         for (int i = 0; i < str.length(); i++) {
             int c = str.codePointAt(i);
