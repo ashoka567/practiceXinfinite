@@ -1,0 +1,98 @@
+As a Devloper faced 
+
+Dealing with devlopers from offshore / issues? 
+dealing with difficult people, 
+dealing
+
+
+ with buggy APIs from vendors. ( trade)
+
+Designing and incorporating feedback from businees and cusotmers?
+getting agreement on the requirements
+
+Working with teams spread out globally. :
+
+Working with such teams (that work in different time zones)
+ involves hand-offs at the end of your shift and beginning of their shift. 
+ You have to explain things ranging from business requirements, 
+ design decisions and development decisions to details of coding, 
+ modularization, unit test cases within a short couple of hours.
+
+
+Challenges as technically leading has different issues deciding on right
+technology stack, maintaining code quality, 
+and delivery , 
+ensuring right engineering practices are in place ,
+coding standards benchmarks and 
+quality checks as a leader, 
+
+
+communication, abstraction, interface design,
+ division of responsibility, testing discipline,
+ and adaptability to ever-evolving requirements
+ 
+---
+
+Code review process :
+
+Dcoumentation  - using 
+and code comments(template), 
+Code review with peer
+beware the team context.
+appropriate tests , making sure 80% covergae of the code.
+
+Prod issue debug :
+When things go wrong :
+
+the golden rule is minimizing client impact.
+
+even if it’s a “one line change”, the first thing to do is rollback.
+ Go back to the previous working state. This is the quickest way to get clients back on a working version.
+ 
+ breadth-first search before a depth-first search, to get rid of the top level nodes. What can I confirm using current resources?
+
+Is the machine up?
+Is the right code installed?
+Is the config in place?
+< Code specific configuration >, like is the routing in the code correct?
+Is the schema version correct?
+Then, get into the code.
+
+
+I think three components make up monitoring:
+ - logging, metrics, and alarms.
+Logging in code, just like the human log, is an evolutionary process.
+
+-------------
+merge sort, quick sort
+
+----------
+
+Design questions :
+Design a system which takes text, parses and gets related data from 3rd party web services. 
+Eg: take city name and get weather and relaed info. such as news. 
+What database schema would you use to store the data if you don't want to query it once you got the results.
+
+-> ANS : Using distrbuted cache or ES to store the data , not saving the data in DB. since the data is more transational
+
+
+Design a custom data structure (I don't remember the question properly). 
+ the problem involves storing the data into objects and sorting them in an order so that you can retrieve it easily.   
+ 
+-> ANS :  using comparator , with merge sort.
+
+Can you give me a small way  to know whether an email is read by a recipient?   
+
+->ANS : ReadReceiptReceivedListener, take the kafka event listner example.  
+
+
+Swap two numbers
+
+-ANS-> 
+first = first - second;
+        second = first + second;
+        first = second - first;
+
+
+
+ 
