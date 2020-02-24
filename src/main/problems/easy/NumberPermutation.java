@@ -47,6 +47,6 @@ public class NumberPermutation {
         NumberPermutation numberPermutation = new NumberPermutation();
         int[] i = {2,3,4};
         List<List<Integer>> lists = numberPermutation.permuteUnique(i);
-       lists.forEach(items -> items.forEach(item-> System.out.println(item))) ;
+       //lists.forEach(items -> items.forEach(item-> System.out.println(item))) ;
     }
 }

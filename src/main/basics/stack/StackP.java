@@ -18,13 +18,17 @@ public class StackP<E> implements Astack<E> {
         return false;
     }
 
+    public StackP(){
+        elementData = new Object[initialSize];
+    }
+
     @Override
     public E push(E o) {
-        if(elementData == null){
-            elementData = new Object[initialSize];
-        }else if(size()>= elementData.length){
-            elementData = Arrays.copyOf(elementData, elementData.length+initialSize, Object[].class);
+        if(elementData.length - 1 == size){
+            elementData = Arrays.copyOf(elementData, elementData.length+initialSize);
         }
+        size = size+1;
+        elementData[size] = o;
         return o;
     }
 
@@ -33,6 +37,7 @@ public class StackP<E> implements Astack<E> {
         E o = null;
         if(size >= 0) {
             o = (E) elementData[size()];
+            --size;
             System.arraycopy(elementData, size, elementData, size,
                     Math.min(size, 0));
         }
@@ -53,8 +58,8 @@ public class StackP<E> implements Astack<E> {
         return minElement;
     }
 
-   /* public static void main(String[] args){
-        Stack s = new Stack();
+    public static void main(String[] args){
+        StackP s = new StackP();
         s.push("Ashok");
         s.push("Ashok1");
         s.push("Ashok2");
@@ -63,5 +68,5 @@ public class StackP<E> implements Astack<E> {
 
         s.pop();
         System.out.println(s);
-    }*/
+    }
 }

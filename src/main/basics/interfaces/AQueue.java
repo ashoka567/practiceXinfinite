@@ -1,6 +1,6 @@
 package basics.interfaces;
 
-public interface AQueue
+public interface AQueue<E>
 {
     int front = -1;
 
@@ -8,9 +8,18 @@ public interface AQueue
 
     public boolean isEmpty();
 
-    public boolean eQ(Object o);
+    public E push(E o);
 
-    public boolean dQ(Object o);
+    public E pop();
 
-    public Object top();
+    /**
+     * head of list , first one
+     * @return
+     */
+    public E peek();
+
+    public E pool();
+
+    public int Size();
+
 }
