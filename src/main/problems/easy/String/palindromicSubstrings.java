@@ -21,6 +21,6 @@ public class palindromicSubstrings {
 
     public static void main(String[] args) {
         palindromicSubstrings p = new palindromicSubstrings();
-        System.out.println(p.countSubstrings("ajhsdasasasdf'"));
+        System.out.println(p.countSubstrings("ashok'"));
     }
 }
