@@ -11,7 +11,7 @@ public class MergeSort {
      */
     public List<Integer> sort(int[] nums){
 
-        this.sort(nums, 0, nums.length-1);
+        this.mergeSort(nums, 0, nums.length-1);
 
         List<Integer> list = new ArrayList<>();
 
@@ -21,13 +21,13 @@ public class MergeSort {
 
     }
 
-    public void sort(int[] n, int left, int right){
+    public void mergeSort(int[] n, int left, int right){
         if(left < right){//until 0 < 0
 
             int m = (left+right)/2;
 
-            sort(n, left, m);
-            sort(n, m+1, right);
+            mergeSort(n, left, m);
+            mergeSort(n, m+1, right);
 
             System.out.println(" L-> "+left+" M-> "+m+" R-> "+right);
             this.merge(n, left, m, right);

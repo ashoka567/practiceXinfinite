@@ -12,6 +12,7 @@ public class Fibnoci {
 
     public static void main(String[] args) {
         Fibnoci f = new Fibnoci();
-        System.out.println(f.Fibnoci(6));
+        System.out.println(f.Fibnoci(7 ));
+        //0 1 1 2 3 5 8 13
     }
 }
