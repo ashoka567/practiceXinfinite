@@ -11,6 +11,6 @@ public class Factorial {
 
     public static void main(String[] args) {
         Factorial f = new Factorial();
-        System.out.println(f.fact(200));
+        System.out.println(f.fact(3));
     }
 }

@@ -2,7 +2,9 @@ package problems.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MergeSort {
 
@@ -36,29 +38,21 @@ public class MergeSort {
     }
 
     public void merge(int[] n, int left, int m, int right){
-
+        Set set = new HashSet();
         int ls = m-left+1;
         int rs = right-m;
 
         System.out.println("ls-> "+ls+" rs-> "+rs);
-
         int[] LA = new int[ls];//intial left array with size
-
         int[] RA = new int[rs];//intial right array with size
-
         for(int i = 0; i < ls; i++){
             LA[i] = n[left+i];
         }
-
         Arrays.stream(LA).forEach(item->System.out.println("LA-> "+item));
-
         for(int j = 0; j < rs; j++){
             RA[j] = n[m+1+j];
         }
-
         Arrays.stream(RA).forEach(item->System.out.println("RA-> "+item));
-
-
         int x =0; int y=0; int z=left;
 
         while (x < ls && y < rs)
